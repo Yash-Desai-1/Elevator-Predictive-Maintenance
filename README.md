@@ -341,7 +341,6 @@ The project uses the following technologies and libraries:
 - Scikit-learn
 - XGBoost
 - Streamlit
-- Flask
 - Joblib
 
 ## Installation
