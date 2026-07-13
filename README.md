@@ -398,3 +398,20 @@ This project helped develop practical understanding in the following areas:
 ## Conclusion
 
 This project demonstrates that machine learning can be used to model elevator vibration behavior and support predictive maintenance decision-making. By combining sensor analysis, temporal feature engineering, and modern regression models, the work shows how historical system behavior can be transformed into useful predictions. Although the project is still research-oriented and educational in scope, it provides a strong foundation for future work in intelligent maintenance systems and real-time industrial monitoring.
+
+## References
+
+1. Shen, L. J., Lukose, J., & Young, L. C. (2021). *Predictive Maintenance on an Elevator System Using Machine Learning*. Journal of Applied Technology and Innovation.
+
+2. Carvalho, T. P., Soares, F. A. A. M. N., Vita, R., Francisco, R. P., Basto, J. P., & Alcalá, S. G. S. (2019). *A Systematic Literature Review of Machine Learning Methods Applied to Predictive Maintenance*. Computers & Industrial Engineering.
+[Link](https://www.sciencedirect.com/science/article/abs/pii/S0360835219304838)
+
+3. Pundir, A., Maheshwari, P., & Prajapati, P. (2022). *Machine Learning Based Predictive Maintenance Model*. Proceedings of the 2nd Indian International Conference on Industrial Engineering and Operations Management.
+[Link](https://ieomsociety.org/proceedings/2022india/528.pdf)
+
+4. Stenström, C., et al. *Machine Learning for Predictive Maintenance: A Multiple Classifier Approach*. Chalmers University of Technology.
+[Link](https://research.chalmers.se/publication/531022/file/531022_Fulltext.pdf)
+
+5. Sayeed, A., et al. (2025). *Predictive Maintenance Using Machine Learning for Industrial Systems*. Statistics, Optimization & Information Computing.
+[Link](https://iapress.org/index.php/soic/article/view/3058)
+
