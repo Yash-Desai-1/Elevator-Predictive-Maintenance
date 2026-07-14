@@ -387,7 +387,7 @@ This project helped develop practical understanding in the following areas:
 - development of an interactive prediction dashboard
 - interpretation of predictive maintenance results
 
-## Resume Highlights
+## Key Highlights
 
 - Built a time-series predictive maintenance project for elevator vibration forecasting using Python, scikit-learn, and XGBoost.
 - Conducted exploratory data analysis, handled missing values, and investigated temporal patterns in the sensor data.
