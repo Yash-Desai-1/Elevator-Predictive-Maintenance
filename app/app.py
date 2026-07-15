@@ -103,6 +103,10 @@ st.info("""
 #load the model
 model_path = os.path.join(os.getcwd(), "models", "xgb_model.pkl")
 
+data_path = os.path.join(os.getcwd(), "data", "processed",
+                        "elevator_with_lag_rollstats_regime.csv")
+full_df = pd.read_csv(data_path)
+
 # try/except = attempt something, and if it fails, handle the error gracefully
 try:
     model = joblib.load(model_path)    # load the model into memory
@@ -216,7 +220,7 @@ if uploaded_file is not None:
     # .median() returns the middle value
     # .astype(int) converts True/False to 1/0
 
-    df["is_high_rev"] = (df["revolutions"] > df["revolutions"].median()).astype(int)
+    df["is_high_rev"] = (df["revolutions"] > full_df["revolutions"].median()).astype(int)
 
     # remove NaN rows after feature engineering
     # Lag and rolling features create NaN in the first N rows
@@ -252,9 +256,7 @@ if uploaded_file is not None:
     df["Predicted_Vibration"] = model.predict(X)
     df["Predicted_Vibration"] = df["Predicted_Vibration"].round(2)
 
-    # taking training datasets mean and std deviation to define our status
-    data_path = os.path.join(os.getcwd(), "data","processed", "elevator_with_lag_rollstats_regime.csv")
-    full_df = pd.read_csv(data_path)
+ 
     split = int(len(full_df) * 0.8)
     train_df = full_df[:split]
 
